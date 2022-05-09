@@ -38,7 +38,7 @@ const App = () => {
                 <Republics data={data} />
                 <Routes>
                     {data.map((item, index) => (
-                        <Route path={`${item.path}`} key={index} element={<RepGuide />} />
+                        <Route path={`${item.path}/*`} key={index} element={<RepGuide />} />
                     ))}
                 </Routes>
             </BrowserRouter>

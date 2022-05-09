@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import classes from "./RepGuide.module.css";
 import RepMap from "./RepMap/RepMap";
 import RepSidebar from "./RepSidebar/RepSidebar";
@@ -222,7 +223,11 @@ const RepGuide = () => {
     ];
     let dat = {};
     const filterData = () => {
-        dat = data.filter((item) => item.name === window.location.pathname.slice(1))[0];
+        let location =
+            window.location.pathname.indexOf("/", 1) !== -1
+                ? window.location.pathname.slice(1, window.location.pathname.indexOf("/", 1))
+                : window.location.pathname.slice(1);
+        dat = data.filter((item) => item.name === location)[0];
     };
     filterData();
     const { sights, otherServices, uzb, covid } = dat;
@@ -234,7 +239,12 @@ const RepGuide = () => {
                 <RepSidebar title="Uzbekistan" links={uzb} />
                 <RepSidebar title="Covid" links={covid} />
             </div>
-            <RepMap />
+            <Routes>
+                <Route path="/" element={<RepMap />} />
+                {sights.map((item, index) => (
+                    <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap />} />
+                ))}
+            </Routes>
         </div>
     );
 };

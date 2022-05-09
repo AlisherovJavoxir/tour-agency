@@ -21,9 +21,9 @@ const Republics = ({ data }) => {
             </div>
             <div className={classes.row_2}>
                 {data.map((item, index) => (
-                    <button key={index}>
-                        <Link to={`${item.path}`}>{item.name}</Link>
-                    </button>
+                    <Link to={`${item.path}`} key={index}>
+                        {item.name}
+                    </Link>
                 ))}
                 <MyInput placeholder="Search" />
             </div>
