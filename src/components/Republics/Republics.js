@@ -3,7 +3,7 @@ import React from "react";
 import { MyButton, MyInput } from "../MyUI/MyUI";
 import { Link } from "react-router-dom";
 
-const Republics = ({ data, changeBckg }) => {
+const Republics = ({ data, changeBckg, breadcrumb }) => {
     return (
         <div className={classes.Republics}>
             <div className={classes.row_1}>
@@ -28,7 +28,7 @@ const Republics = ({ data, changeBckg }) => {
                 <MyInput placeholder="Search" />
             </div>
             <div className={classes.row_3}>
-                <small>Countries /</small>
+                <small>{breadcrumb}</small>
             </div>
         </div>
     );

@@ -35,10 +35,14 @@ const App = () => {
         },
     ];
 
-    let [background, setBackground] = useState(uzbekistan);
+    let [breadcrumb, setBreadcrumb] = useState(['country /'])
+    let [background, setBackground] = useState();
 
     const changeBackground = (republic) => {
-        // if (republic == 1) { setBackground(uzbekistan) }
+        setBreadcrumb(window.location.pathname)
+        if (republic == 1) {
+
+        }
     }
 
     return (
@@ -48,7 +52,7 @@ const App = () => {
             </div>
             <div className="body">
                 <BrowserRouter>
-                    <Republics changeBckg={changeBackground} data={data} />
+                    <Republics breadcrumb={breadcrumb} changeBckg={changeBackground} data={data} />
                     <Routes>
                         {data.map((item, index) => (
                             <Route path={`${item.path}/*`} key={index} element={<RepGuide />} />
