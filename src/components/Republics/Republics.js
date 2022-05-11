@@ -3,7 +3,11 @@ import React from "react";
 import { MyButton, MyInput } from "../MyUI/MyUI";
 import { Link } from "react-router-dom";
 
-const Republics = ({ data }) => {
+const Republics = ({ data, changeBckg }) => {
+    const changeBackground = (index) => {
+        changeBckg(index)
+    }
+
     return (
         <div className={classes.Republics}>
             <div className={classes.row_1}>
@@ -21,14 +25,16 @@ const Republics = ({ data }) => {
             </div>
             <div className={classes.row_2}>
                 {data.map((item, index) => (
-                    <Link to={`${item.path}`} key={index}>
-                        {item.name}
-                    </Link>
+                    <MyButton key={index} onClick={() => changeBackground(index)}>
+                        <Link to={`${item.path}`}>
+                            {item.name}
+                        </Link>
+                    </MyButton>
                 ))}
                 <MyInput placeholder="Search" />
             </div>
             <div className={classes.row_3}>
-                <small>Countries/</small>
+                <small>Countries /</small>
             </div>
         </div>
     );

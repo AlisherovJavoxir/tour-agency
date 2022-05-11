@@ -31,19 +31,28 @@ const App = () => {
             name: "Kyrgyzstan",
         },
     ];
+
+    const changeBackground = (republic) => {
+        console.log(republic);
+    }
+
     return (
         <div>
-            <BrowserRouter>
+            <div className="background">
                 <Header />
-                <Republics data={data} />
-                <Routes>
-                    {data.map((item, index) => (
-                        <Route path={`${item.path}/*`} key={index} element={<RepGuide />} />
-                    ))}
-                </Routes>
-            </BrowserRouter>
-            {/* <RepGuide/> */}
-            <Footer />
+            </div>
+            <div className="body">
+                <BrowserRouter>
+                    <Republics changeBckg={changeBackground} data={data} />
+                    <Routes>
+                        {data.map((item, index) => (
+                            <Route path={`${item.path}/*`} key={index} element={<RepGuide />} />
+                        ))}
+                    </Routes>
+                </BrowserRouter>
+                {/* <RepGuide/> */}
+                <Footer />
+            </div>
         </div>
     );
 };

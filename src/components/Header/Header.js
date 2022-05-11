@@ -5,22 +5,34 @@ import { MyButton } from '../MyUI/MyUI'
 const Header = () => {
     return (
         <div className={classes.Header}>
-           <div className={classes.nav}>
+            <div className={classes.nav}>
                 <div className={classes.col_1}>
                     <MyButton>About us</MyButton>
                     <MyButton>Contact us</MyButton>
                 </div>
                 <div className={classes.col_2}>
-                    <MyButton>uzb@oasisinternational.travel</MyButton>
-                    <MyButton>FB</MyButton>
-                    <MyButton>IN</MyButton>
-                    <MyButton>YT</MyButton>
-                    <MyButton>TW</MyButton>
+                    <MyButton>
+                        <a href="https://t.me/itc_21">
+                            Email
+                        </a>
+                    </MyButton>
+                    <MyButton>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </MyButton>
+                    <MyButton>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </MyButton>
+                    <MyButton>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </MyButton>
+                    <MyButton>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </MyButton>
                 </div>
-           </div>
-           <div className={classes.logo}>
-               <h1>LOGO</h1>
-           </div>
+            </div>
+            <div className={classes.logo}>
+                <img src="/assets/logo.png" alt="Tour agency logo" />
+            </div>
         </div>
     );
 };

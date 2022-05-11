@@ -8,8 +8,8 @@ const RepSidebar = (props) => {
         <div className={classes.RepSidebar}>
             <h3 style={{ marginBottom: "10px" }}>{props.title}</h3>
             <ul style={{ listStyle: "none" }}>
-                {links.map((f) => (
-                    <li>
+                {links.map((f, index) => (
+                    <li key={index}>
                         <Link to={`${f.toLowerCase()}`}>{f}</Link>
                     </li>
                 ))}

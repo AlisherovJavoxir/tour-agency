@@ -17,7 +17,7 @@
 .col_2 {
   width: 45%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 }
 .logo {
   display: flex;
