@@ -32,6 +32,8 @@ const App = () => {
         },
     ];
 
+    let [background, setBackground] = []
+
     const changeBackground = (republic) => {
         console.log(republic);
     }
