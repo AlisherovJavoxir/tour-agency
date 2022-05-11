@@ -1,12 +1,8 @@
 import cl from "./MyUI.module.css";
 import React from "react";
 
-export const MyButton = ({ children, changeBckg, index }) => {
-    return (
-        <button className={cl.myButton} onClick={() => changeBckg(index)}>
-            {children}
-        </button>
-    );
+export const MyButton = ({ children }) => {
+    return <button className={cl.myButton}>{children}</button>;
 };
 
 export const MyInput = ({ ...props }) => {
