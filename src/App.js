@@ -4,6 +4,8 @@ import Republics from "./components/Republics/Republics";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RepGuide from "./components/RepGuide/RepGuide";
 import Footer from "./components/Footer/Footer";
+import { useState } from 'react';
+
 const App = () => {
     let data = [
         {
@@ -32,7 +34,7 @@ const App = () => {
         },
     ];
 
-    let [background, setBackground] = []
+    let [background, setBackground] = useState('');
 
     const changeBackground = (republic) => {
         console.log(republic);
