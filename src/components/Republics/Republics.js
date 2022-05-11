@@ -4,10 +4,6 @@ import { MyButton, MyInput } from "../MyUI/MyUI";
 import { Link } from "react-router-dom";
 
 const Republics = ({ data, changeBckg }) => {
-    // const changeBackground = (index) => {
-    //     changeBckg(index)
-    // }
-
     return (
         <div className={classes.Republics}>
             <div className={classes.row_1}>
@@ -25,8 +21,10 @@ const Republics = ({ data, changeBckg }) => {
             </div>
             <div className={classes.row_2}>
                 {data.map((item, index) => (
-                    <MyButton key={index} changeBckg={changeBckg} index={index}>
-                        <Link to={`${item.path}`}>{item.name}</Link>
+                    <MyButton key={index}>
+                        <Link to={`${item.path}`} onClick={() => changeBckg(index)}>
+                            {item.name}
+                        </Link>
                     </MyButton>
                 ))}
                 <MyInput placeholder="Search" />
