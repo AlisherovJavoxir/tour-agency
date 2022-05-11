@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RepGuide from "./components/RepGuide/RepGuide";
 import Footer from "./components/Footer/Footer";
 import { useState } from 'react';
+import uzbekistan from './assets/backgrounds/uzbekistan.jpg'
 
 const App = () => {
     let data = [
@@ -34,15 +35,15 @@ const App = () => {
         },
     ];
 
-    let [background, setBackground] = useState('');
+    let [background, setBackground] = useState(uzbekistan);
 
     const changeBackground = (republic) => {
-        console.log(republic);
+        // if (republic == 1) { setBackground(uzbekistan) }
     }
 
     return (
         <div>
-            <div className="background">
+            <div className="background" style={{ background: background }}>
                 <Header />
             </div>
             <div className="body">

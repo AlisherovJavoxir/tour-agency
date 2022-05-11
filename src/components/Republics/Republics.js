@@ -21,11 +21,9 @@ const Republics = ({ data, changeBckg }) => {
             </div>
             <div className={classes.row_2}>
                 {data.map((item, index) => (
-                    <MyButton key={index}>
-                        <Link to={`${item.path}`} onClick={() => changeBckg(index)}>
-                            {item.name}
-                        </Link>
-                    </MyButton>
+                    <Link className={classes.link} key={index} to={`${item.path}`} onClick={() => changeBckg(index)}>
+                        {item.name}
+                    </Link>
                 ))}
                 <MyInput placeholder="Search" />
             </div>
