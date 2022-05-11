@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RepGuide from "./components/RepGuide/RepGuide";
 import Footer from "./components/Footer/Footer";
 import { useState } from 'react';
-import uzbekistan from './assets/backgrounds/uzbekistan.jpg'
 
 const App = () => {
     let data = [
@@ -36,18 +35,28 @@ const App = () => {
     ];
 
     let [breadcrumb, setBreadcrumb] = useState(['country /'])
-    let [background, setBackground] = useState();
+    let [background, setBackground] = useState(require('./assets/backgrounds/uzbekistan.jpg'));
 
     const changeBackground = (republic) => {
         setBreadcrumb(window.location.pathname)
-        if (republic == 1) {
-
+        switch (republic) {
+            case 0: setBackground(require('./assets/backgrounds/centr.asia.jpg'));
+                break;
+            case 1: setBackground(require('./assets/backgrounds/uzbekistan.jpg'));
+                break;
+            case 2: setBackground(require('./assets/backgrounds/turkmenistan.jpg'));
+                break;
+            case 3: setBackground(require('./assets/backgrounds/tajikistan.jpg'));
+                break;
+            case 4: setBackground(require('./assets/backgrounds/kazakhstan.jpg'));
+                break;
+            case 5: setBackground(require('./assets/backgrounds/kyrgyzistan.jpg'));
         }
     }
 
     return (
         <div>
-            <div className="background" style={{ background: background }}>
+            <div className="background" style={{ background: `url(${background})`, backgroundSize: '120%', padding: '30px' }}>
                 <Header />
             </div>
             <div className="body">
@@ -62,7 +71,7 @@ const App = () => {
                 {/* <RepGuide/> */}
                 <Footer />
             </div>
-        </div>
+        </div >
     );
 };
 

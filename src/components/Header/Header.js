@@ -32,7 +32,7 @@ const Header = () => {
                 </div>
             </div>
             <div className={classes.logo}>
-                <img width={200} height={200} src={background} alt="Tour agency logo" />
+                <img width={100} height={100} src={background} alt="Tour agency logo" />
             </div>
         </div>
     );
