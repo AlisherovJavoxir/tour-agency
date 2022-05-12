@@ -221,12 +221,17 @@ const RepGuide = () => {
                 <RepSidebar title="Uzbekistan" links={uzb} />
                 <RepSidebar title="Covid" links={covid} />
             </div>
-            <Routes>
-                <Route path="/" element={<RepMap />} />
-                {sights.map((item, index) => (
-                    <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap />} />
-                ))}
-            </Routes>
+            <div className={classes.col_2}>
+                <Routes>
+                    <Route path="/" element={<RepMap />} />
+                    {sights.map((item, index) => (
+                        <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap />} />
+                    ))}
+                </Routes>
+            </div>
+            <div className={classes.col_3}>
+                <RepSidebar title="Shrines" links={sights} />
+            </div>
         </div>
     );
 };

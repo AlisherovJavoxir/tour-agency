@@ -80,7 +80,6 @@ const App = () => {
                         ))}
                     </Routes>
                 </BrowserRouter>
-                {/* <RepGuide /> */}
                 <Footer />
             </div>
         </div>
