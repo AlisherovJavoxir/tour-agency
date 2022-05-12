@@ -96,15 +96,7 @@ const RepGuide = () => {
                 "Foreign",
                 "Whi visit?",
             ],
-            sights: [
-                "Dushanbe",
-                "Xalton",
-                "Sug'd",
-                "Badaxshon",
-                "Xo'jand",
-                "Qo'rg'ontepa",
-                "Qulyab",
-            ],
+            sights: ["Dushanbe", "Xalton", "Sug'd", "Badaxshon", "Xo'jand", "Qo'rg'ontepa", "Qulyab"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
@@ -124,14 +116,7 @@ const RepGuide = () => {
                 "Foreign",
                 "Whi visit?",
             ],
-            sights: [
-                "Ashxabod",
-                "Ahal",
-                "Bolqon",
-                "Dashoguz",
-                "Lebap",
-                "Mari",
-            ],
+            sights: ["Ashxabod", "Ahal", "Bolqon", "Dashoguz", "Lebap", "Mari"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
@@ -188,16 +173,7 @@ const RepGuide = () => {
                 "Foreign",
                 "Whi visit?",
             ],
-            sights: [
-                "Bishkek",
-                "Botken",
-                "Chuy",
-                "Jalolobod",
-                "Norin",
-                "O'sh",
-                "Talas",
-                "Issiqko'l",
-            ],
+            sights: ["Bishkek", "Botken", "Chuy", "Jalolobod", "Norin", "O'sh", "Talas", "Issiqko'l"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
@@ -225,12 +201,9 @@ const RepGuide = () => {
                 <Routes>
                     <Route path="/" element={<RepMap />} />
                     {sights.map((item, index) => (
-                        <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap />} />
+                        <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap sights={sights} />} />
                     ))}
                 </Routes>
-            </div>
-            <div className={classes.col_3}>
-                <RepSidebar title="Shrines" links={sights} />
             </div>
         </div>
     );
