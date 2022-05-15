@@ -25,7 +25,7 @@ const Republics = ({ data, changeBckg }) => {
                         {item.name}
                     </Link>
                 ))}
-                <MyInput placeholder="Search" />
+                <MyInput placeholder="Search"/>
             </div>
             <div className={classes.row_3}>
                 <small>{pathFunc()}</small>
