@@ -35,7 +35,7 @@ const App = () => {
     ];
 
     let [breadcrumb, setBreadcrumb] = useState(["country /"]);
-    let [background, setBackground] = useState(require("./assets/backgrounds/uzbekistan.jpg"));
+    let [background, setBackground] = useState(require("./assets/backgrounds/centr.asia.jpg"));
 
     const changeBackground = (republic) => {
         setBreadcrumb(window.location.pathname);
@@ -65,15 +65,15 @@ const App = () => {
 
     return (
         <div>
-<<<<<<< HEAD
-            // <div style={{ backgroundImage: `url(${background})`}}  className="background">
-=======
+            {/* <div style={{ backgroundImage: `url(${background})`}}  className="background"></div> */}
             <div
-                className="background"
-                style={{ background: `url(${background})`, backgroundSize: "120%", padding: "30px" }}
-            >
->>>>>>> d7734d0c28374f05fc35bc7273e04e7ce34ca73e
-                <Header />
+                style={{ 
+                    backgroundImage: `url(${background})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                    
+                }}>
+                    <Header/>
             </div>
             <div className="body">
                 <BrowserRouter>
@@ -86,6 +86,7 @@ const App = () => {
                 </BrowserRouter>
                 <Footer />
             </div>
+        
         </div>
     );
 };
