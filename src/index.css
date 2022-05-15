@@ -10,4 +10,7 @@ a {
     color: #000;
     all: unset;
 }
-
+body {
+    /* background-color: #ce9f89; */
+    background-color: #FFF0A1;
+}

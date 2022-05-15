@@ -12,7 +12,7 @@ const RepGuide = () => {
     let data = [
         {
             name: "",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -27,27 +27,18 @@ const RepGuide = () => {
                 "Whi visit?",
             ],
             sights: [
-                "Tashkent",
-                "Samarkand",
-                "Bukhara",
-                "Khiva",
-                "Gijduvan",
-                "Shakhrisabz",
-                "Margilan",
-                "Rishtan",
-                "Charvak",
-                "Aral Sea",
-                "Boysun",
-                "Chimgan",
-                "Nurata",
-                "Termez",
+                "Uzbekistan",
+                "Turkmenistan",
+                "Kyrgzystan",
+                "Tajikistan",
+                "Kazakhstan",
             ],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
         {
             name: "uzbekistan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -82,7 +73,7 @@ const RepGuide = () => {
         },
         {
             name: "tajikistan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -102,7 +93,7 @@ const RepGuide = () => {
         },
         {
             name: "turkmenistan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -122,7 +113,7 @@ const RepGuide = () => {
         },
         {
             name: "kazakhstan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -159,7 +150,7 @@ const RepGuide = () => {
         },
         {
             name: "kyrgyzstan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -188,20 +179,20 @@ const RepGuide = () => {
         dat = data.filter((item) => item.name === location)[0];
     };
     filterData();
-    const { sights, otherServices, uzb, covid } = dat;
+    const { sights, otherServices, faqs, covid } = dat;
     return (
         <div className={classes.RepGuide}>
             <div className={classes.col_1}>
                 <RepSidebar title="Cities & Sights" links={sights} />
-                <RepSidebar title="Other services" links={otherServices} />
-                <RepSidebar title="Uzbekistan" links={uzb} />
+                <RepSidebar title="Other services" links={otherServices}/>
+                <RepSidebar title="Uzbekistan" links={faqs} />
                 <RepSidebar title="Covid" links={covid} />
             </div>
             <div className={classes.col_2}>
                 <Routes>
                     <Route path="/" element={<RepMap />} />
                     {sights.map((item, index) => (
-                        <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap sights={sights} />} />
+                        <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap sights={sights} />}/>
                     ))}
                 </Routes>
             </div>

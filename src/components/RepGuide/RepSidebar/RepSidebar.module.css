@@ -1,10 +1,43 @@
-.RepSidebar {
-    width: 100%;
-    border: 1px solid #000;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0;
-    margin-bottom: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.RepSidebar {
+    width: 90%;
+    margin-left: 8%;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 6px 0px black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px 30px;
+    background-color: #eec674;
+
+}
+
+.RepSidebar ul {
+    width: 100%;
+}
+
+.RepSidebar li {
+    color: rgb(87, 82, 82);
+    width: 100%;
+}
+
+.RepSidebar a {
+    display: block;
+    padding: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.RepSidebar a:hover {
+    padding-left: 10px;
+    color: black;
+    background-color: #c2953a;
+}
+
