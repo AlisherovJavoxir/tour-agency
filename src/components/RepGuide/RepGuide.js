@@ -11,7 +11,7 @@ const RepGuide = () => {
     // let covid = ['Covid updates', 'Covid measures', 'Flexible booking', 'Flexible cancellations']
     let data = [
         {
-            name: "cental-asia",
+            name: "",
             uzb: [
                 "Whi visit?",
                 "Arts",
@@ -27,11 +27,11 @@ const RepGuide = () => {
                 "Whi visit?",
             ],
             sights: [
-                "Uzbekistan",
-                "Tadjikistan",
-                "Turkmenistan",
-                "Kazakhistan",
-                "kyr",
+                "Tashkent",
+                "Samarkand",
+                "Bukhara",
+                "Khiva",
+                "Gijduvan",
                 "Shakhrisabz",
                 "Margilan",
                 "Rishtan",
