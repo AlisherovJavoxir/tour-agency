@@ -12,7 +12,7 @@ const RepGuide = () => {
     let data = [
         {
             name: "",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -47,7 +47,7 @@ const RepGuide = () => {
         },
         {
             name: "uzbekistan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -82,7 +82,7 @@ const RepGuide = () => {
         },
         {
             name: "tajikistan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -102,7 +102,7 @@ const RepGuide = () => {
         },
         {
             name: "turkmenistan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -122,7 +122,7 @@ const RepGuide = () => {
         },
         {
             name: "kazakhstan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -159,7 +159,7 @@ const RepGuide = () => {
         },
         {
             name: "kyrgyzstan",
-            uzb: [
+            faqs: [
                 "Whi visit?",
                 "Arts",
                 "Customs",
@@ -188,13 +188,13 @@ const RepGuide = () => {
         dat = data.filter((item) => item.name === location)[0];
     };
     filterData();
-    const { sights, otherServices, uzb, covid } = dat;
+    const { sights, otherServices, faqs, covid } = dat;
     return (
         <div className={classes.RepGuide}>
             <div className={classes.col_1}>
                 <RepSidebar title="Cities & Sights" links={sights} />
                 <RepSidebar title="Other services" links={otherServices} />
-                <RepSidebar title="Uzbekistan" links={uzb} />
+                <RepSidebar title="Uzbekistan" links={faqs} />
                 <RepSidebar title="Covid" links={covid} />
             </div>
             <div className={classes.col_2}>
