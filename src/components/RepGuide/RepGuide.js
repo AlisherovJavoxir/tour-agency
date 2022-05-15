@@ -96,15 +96,7 @@ const RepGuide = () => {
                 "Foreign",
                 "Whi visit?",
             ],
-            sights: [
-                "Dushanbe",
-                "Xalton",
-                "Sug'd",
-                "Badaxshon",
-                "Xo'jand",
-                "Qo'rg'ontepa",
-                "Qulyab",
-            ],
+            sights: ["Dushanbe", "Xalton", "Sug'd", "Badaxshon", "Xo'jand", "Qo'rg'ontepa", "Qulyab"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
@@ -124,14 +116,7 @@ const RepGuide = () => {
                 "Foreign",
                 "Whi visit?",
             ],
-            sights: [
-                "Ashxabod",
-                "Ahal",
-                "Bolqon",
-                "Dashoguz",
-                "Lebap",
-                "Mari",
-            ],
+            sights: ["Ashxabod", "Ahal", "Bolqon", "Dashoguz", "Lebap", "Mari"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
@@ -188,20 +173,12 @@ const RepGuide = () => {
                 "Foreign",
                 "Whi visit?",
             ],
-            sights: [
-                "Bishkek",
-                "Botken",
-                "Chuy",
-                "Jalolobod",
-                "Norin",
-                "O'sh",
-                "Talas",
-                "Issiqko'l",
-            ],
+            sights: ["Bishkek", "Botken", "Chuy", "Jalolobod", "Norin", "O'sh", "Talas", "Issiqko'l"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
         },
     ];
+
     let dat = {};
     const filterData = () => {
         let location =
@@ -220,12 +197,14 @@ const RepGuide = () => {
                 <RepSidebar title="Uzbekistan" links={uzb} />
                 <RepSidebar title="Covid" links={covid} />
             </div>
-            <Routes>
-                <Route path="/" element={<RepMap />} />
-                {sights.map((item, index) => (
-                    <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap />} />
-                ))}
-            </Routes>
+            <div className={classes.col_2}>
+                <Routes>
+                    <Route path="/" element={<RepMap />} />
+                    {sights.map((item, index) => (
+                        <Route path={`${item.toLowerCase()}/*`} key={index} element={<RepMap sights={sights} />} />
+                    ))}
+                </Routes>
+            </div>
         </div>
     );
 };

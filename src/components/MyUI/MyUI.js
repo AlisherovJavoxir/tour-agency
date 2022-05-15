@@ -8,3 +8,7 @@ export const MyButton = ({ children }) => {
 export const MyInput = ({ ...props }) => {
     return <input {...props} className={cl.myInput} />;
 };
+
+export const pathFunc = () => {
+    return window.location.pathname;
+};
