@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Republics = ({ data, changeBckg, breadcrumb }) => {
     return (
         <div className={classes.Republics}>
-            <div className={classes.row_1}>
+            {/* <div className={classes.row_1}>
                 <div className={classes.col_1}>
                     <MyButton>Build your own trip</MyButton>
                 </div>
@@ -18,7 +18,7 @@ const Republics = ({ data, changeBckg, breadcrumb }) => {
                     <MyButton>IT</MyButton>
                     <MyButton>ES</MyButton>
                 </div>
-            </div>
+            </div> */}
             <div className={classes.row_2}>
                 {data.map((item, index) => (
                     <Link className={classes.link} key={index} to={`${item.path}`} onClick={() => changeBckg(index)}>

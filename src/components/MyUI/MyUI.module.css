@@ -7,17 +7,22 @@
   transition: all 0.2s;
   font-size: 1em;
   border-radius: 4px;
-  color: #fff;
-  background-color: ;
+  color: white;
 }
 .myButton:hover {
-  background-color: #97e297;
-  box-shadow: 4px 4px#7ebd7e;
+  background-color: #B6A47F;
+  /* box-shadow: 4px 4px#7ebd7e59; */
 }
 .myInput {
   border: none;
   outline: none;
   padding: 10px 15px;
-  background-color: #97e297;
+  background-color: #b6a47f;
   border-radius: 4px;
+  color: white;
+  font-size: 18px;
+}
+
+.myInput::placeholder {
+  color: rgba(255, 255, 255, 0.504);
 }

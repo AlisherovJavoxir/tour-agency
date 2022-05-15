@@ -56,7 +56,7 @@ const App = () => {
 
     return (
         <div>
-            <div className="background" style={{ background: `url(${background})`, backgroundSize: '120%', padding: '30px' }}>
+            <div style={{ backgroundImage: `url(${background})`}}  className="background">
                 <Header />
             </div>
             <div className="body">

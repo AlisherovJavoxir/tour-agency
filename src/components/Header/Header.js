@@ -18,22 +18,27 @@ const Header = () => {
                         </a>
                     </MyButton>
                     <MyButton>
-                        <ion-icon name="logo-facebook"></ion-icon>
+                        <h2><ion-icon name="logo-facebook"></ion-icon></h2>
+                        {/* <ion-icon name="logo-facebook"></ion-icon> */}
                     </MyButton>
                     <MyButton>
-                        <ion-icon name="logo-instagram"></ion-icon>
+                        <h2><ion-icon name="logo-instagram"></ion-icon></h2>
+                        {/* <ion-icon name="logo-instagram"></ion-icon> */}
                     </MyButton>
                     <MyButton>
-                        <ion-icon name="logo-youtube"></ion-icon>
+                        <h2><ion-icon name="logo-youtube"></ion-icon></h2>
+                        {/* <ion-icon name="logo-youtube"></ion-icon> */}
                     </MyButton>
                     <MyButton>
-                        <ion-icon name="logo-twitter"></ion-icon>
+                        <h2><ion-icon name="logo-twitter"></ion-icon></h2>
+                        {/* <ion-icon name="logo-twitter"></ion-icon> */}
                     </MyButton>
                 </div>
             </div>
-            <div className={classes.logo}>
+            {/* <div className={classes.logo}>
                 <img width={100} height={100} src={background} alt="Tour agency logo" />
-            </div>
+            </div> */}
+
         </div>
     );
 };
