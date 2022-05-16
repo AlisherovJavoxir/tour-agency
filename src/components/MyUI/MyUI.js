@@ -13,6 +13,24 @@ export const pathFunc = () => {
     return window.location.pathname;
 };
 
+export const MyCountry = () => {
+    var res = window.location.pathname;
+    if(res.length>1){
+        res = res.slice(1);
+        switch (res){
+            case "uzbekistan": return res = "Uzbekistan";
+            case "tajikistan": return res = "Tajikistan";
+            case "kazakhstan": return res = "Kazakhstan";
+            case "kyrgyzstan": return res = "Kyrgyzstan";
+            case "turkmenistan": return res = "Turkmenistan";
+        }
+    }
+    else {
+        res = "Central Asia";
+    }
+    return res;
+}
+
 export const RepMapContent = () => {
     return (
         <div>
