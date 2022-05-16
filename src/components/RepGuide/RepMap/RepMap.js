@@ -30,7 +30,9 @@ const RepMap = ({ sights }) => {
                     </div>
                     <div className={classes.mapContainer}>
                         <small>Map of {country}</small>
-                        <div className={classes.map}></div>
+                        <div className={classes.map}>
+                            <iframe style={{ border: 0, width: '100%', height: '100%' }} src="https://tinyurl.com/y4y37yrj"></iframe>
+                        </div>
                     </div>
                 </>
             )}

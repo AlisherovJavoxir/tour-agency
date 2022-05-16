@@ -27,20 +27,7 @@ const RepGuide = () => {
                 "Whi visit?",
             ],
             sights: [
-                "Tashkent",
-                "Samarkand",
-                "Bukhara",
-                "Khiva",
-                "Gijduvan",
-                "Shakhrisabz",
-                "Margilan",
-                "Rishtan",
-                "Charvak",
-                "Aral Sea",
-                "Boysun",
-                "Chimgan",
-                "Nurata",
-                "Termez",
+                'Uzbekistan', 'Tajikistan', 'Kyrgyzistan', 'Kazakhstan', 'Turkmenistan'
             ],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
             otherServices: ["Flights", "Guides", "Trains", "Transportation", "Visa"],
@@ -62,8 +49,8 @@ const RepGuide = () => {
                 "Whi visit?",
             ],
             sights: [
-                "Tashkent",
-                "Samarkand",
+                { name: 'Tashkent', shrines: ['Amir Temur xiyoboni', 'Mustaqillik maydoni'] },
+                { name: 'Samarkand', shrines: ['Registon maydoni'] },
                 "Bukhara",
                 "Khiva",
                 "Gijduvan",
@@ -192,7 +179,7 @@ const RepGuide = () => {
     return (
         <div className={classes.RepGuide}>
             <div className={classes.col_1}>
-                <RepSidebar title="Cities & Sights" links={sights} />
+                <RepSidebar title="Cities" links={sights} />
                 <RepSidebar title="Other services" links={otherServices} />
                 <RepSidebar title="Uzbekistan" links={faqs} />
                 <RepSidebar title="Covid" links={covid} />
