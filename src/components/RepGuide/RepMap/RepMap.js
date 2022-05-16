@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import { RepMapContent } from "../../MyUI/MyUI";
 import RepSidebar from "../RepSidebar/RepSidebar";
 import classes from "./RepMap.module.css";
+import {RepMapContent} from "../../MyUI/MyUI";
 
 const RepMap = ({ sights }) => {
     let country = "Uzbekistan";
-    const [map, setMap] = useState(
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4844275.476483655!2d60.32918089043448!3d41.67349887319654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b20a5d676b1%3A0xca0a6dad7e841e20!2sUzbekist%C3%A1n!5e0!3m2!1ses!2s!4v1652598614189!5m2!1ses!2s"
-    );
-
+    const [map, setMap] = useState('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23555927.376209084!2d48.94942010700397!3d43.887336531337596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x421ca47a95e8b557%3A0xc9e4e4fa8732db50!2z0KbQtdC90YLRgNCw0LvRjNC90LDRjyDQkNC30LjRjw!5e0!3m2!1sru!2s!4v1652660953244!5m2!1sru!2s');
     return (
         <div className={classes.RepMap}>
             {sights ? (
