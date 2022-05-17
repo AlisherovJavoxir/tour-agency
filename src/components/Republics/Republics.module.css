@@ -14,7 +14,7 @@
   align-items: center;
   margin-top: -70px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.608);
+  background-color: #d698628c;
 }
 .row_3 {
   background-color: #97e297;
@@ -29,10 +29,11 @@
   align-items: center;
   border-radius: 4px;
   font-size: 1rem;
-  color: #fff;
+  color: black;
   cursor: pointer;
 }
 
 .link:hover {
-  background-color: #B6A47F;
+  background-color: #FCC83E;
+  color: black;
 }

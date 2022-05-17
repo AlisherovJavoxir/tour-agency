@@ -10,7 +10,8 @@ const RepMap = ({ sights }) => {
         },
         {
             name: "Uzbekistan",
-            address: "https://buff.page.link/3CPa"
+            // address: "https://buff.page.link/3CPa"
+            address: "https://buff.page.link/q1Vc"
         },
         {
             name: "Tajikistan",
@@ -65,10 +66,11 @@ const RepMap = ({ sights }) => {
                     <div className={classes.mapContainer}>
                         <small>Map of {MyCountry()}</small>
                         <div className={classes.map}>
-                            <iframe src={MapFunc(CountryMap)} width="100%" height="100%" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src={MapFunc(CountryMap)} width="100%" height="100%" allowFullScreen = {true} allow="full" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </>
+                
             )}
         </div>
     );

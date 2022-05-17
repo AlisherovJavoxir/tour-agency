@@ -8,10 +8,11 @@
   transition: 0.2s;
   font-size: 1em;
   border-radius: 4px;
-  color: white;
+  color: black;
 }
 .myButton:hover {
-  background-color: #B6A47F
+  /* transform: scale(1.1); */
+  background-color: #FCC83E;
 }
 
 .myInput {
@@ -19,12 +20,13 @@
   outline: none;
   height: 46px;
   padding: 0px 27px;
-  background-color: #b6a47f;
+  border: 1px solid black;
+  background-color: #d698628c;
   border-radius: 4px;
-  color: white;
+  color: black;
   font-size: 1rem;
 }
 
 .myInput::placeholder {
-  color: rgba(255, 255, 255, 0.504)
+  color: rgba(0, 0, 0, 0.504)
 };

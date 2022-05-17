@@ -2,9 +2,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.608);
   padding: 0px 40px;
   margin-top: 20px;
+  box-shadow: 2px 10px 32px 2px black;
 }
 
 .col_1 {
@@ -18,5 +18,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
 }
