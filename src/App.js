@@ -35,28 +35,28 @@ const App = () => {
     ];
 
     let [breadcrumb, setBreadcrumb] = useState(["country /"]);
-    let [background, setBackground] = useState(require("./assets/backgrounds/centr.asia.jpg"));
+    let [background, setBackground] = useState(require("./assets/backgrounds/update/ca.jpg"));
 
     const changeBackground = (republic) => {
         setBreadcrumb(window.location.pathname);
         switch (republic) {
             case 0:
-                setBackground(require("./assets/backgrounds/centr.asia.jpg"));
+                setBackground(require("./assets/backgrounds/update/ca.jpg"));
                 break;
             case 1:
-                setBackground(require("./assets/backgrounds/uzbekistan.jpg"));
+                setBackground(require("./assets/backgrounds/update/uz.jpg"));
                 break;
             case 2:
-                setBackground(require("./assets/backgrounds/turkmenistan.jpg"));
+                setBackground(require("./assets/backgrounds/update/turkmenistan.jpg"));
                 break;
             case 3:
-                setBackground(require("./assets/backgrounds/tajikistan.jpg"));
+                setBackground(require("./assets/backgrounds/update/tajikistan.jpg"));
                 break;
             case 4:
-                setBackground(require("./assets/backgrounds/kazakhstan.jpg"));
+                setBackground(require("./assets/backgrounds/update/kz.jpg"));
                 break;
             case 5:
-                setBackground(require("./assets/backgrounds/kyrgyzistan.jpg"));
+                setBackground(require("./assets/backgrounds/update/kr.jpg"));
                 break;
             default:
                 break;
@@ -66,9 +66,9 @@ const App = () => {
     return (
         <div>
             {/* <div style={{ backgroundImage: `url(${background})`}}  className="background"></div> */}
-            <div><Header/></div>
+            <div><Header /></div>
             <div className="background"
-                style={{backgroundImage: `url(${background})`}}>
+                style={{ backgroundImage: `url(${background})` }}>
             </div>
             <div className="body">
                 <BrowserRouter>
@@ -81,7 +81,7 @@ const App = () => {
                 </BrowserRouter>
                 <Footer />
             </div>
-        
+
         </div>
     );
 };

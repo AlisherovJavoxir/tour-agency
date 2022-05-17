@@ -1,13 +1,44 @@
 import React, { useState } from "react";
-import { RepMapContent } from "../../MyUI/MyUI";
 import RepSidebar from "../RepSidebar/RepSidebar";
 import classes from "./RepMap.module.css";
-
+import { RepMapContent, MyCountry } from "../../MyUI/MyUI";
 const RepMap = ({ sights }) => {
-    let country = "Uzbekistan";
-    const [map, setMap] = useState(
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4844275.476483655!2d60.32918089043448!3d41.67349887319654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b20a5d676b1%3A0xca0a6dad7e841e20!2sUzbekist%C3%A1n!5e0!3m2!1ses!2s!4v1652598614189!5m2!1ses!2s"
-    );
+    const CountryMap = [
+        {
+            name: "Central Asia",
+            address: 'https://buff.page.link/Tb1t'
+        },
+        {
+            name: "Uzbekistan",
+            // address: "https://buff.page.link/3CPa"
+            address: "https://buff.page.link/q1Vc"
+        },
+        {
+            name: "Tajikistan",
+            address: "https://buff.page.link/d2Pb"
+        },
+        {
+            name: "Kyrgyzstan",
+            address: "https://buff.page.link/UjJm"
+        },
+        {
+            name: "Turkmenistan",
+            address: "https://buff.page.link/mysf"
+        },
+        {
+            name: "Kazakhstan",
+            address: "https://buff.page.link/iECy"
+        }
+    ];
+
+    function MapFunc(CountryMap) {
+        let item = MyCountry();
+        for (const element of CountryMap) {
+            if (element.name === item) {
+                return element.address;
+            }
+        }
+    }
 
     return (
         <div className={classes.RepMap}>
@@ -30,15 +61,16 @@ const RepMap = ({ sights }) => {
             ) : (
                 <>
                     <div className={classes.title}>
-                        <h4 style={{ textAlign: "center" }}>{country} travel guide</h4>
+                        <h4 style={{ textAlign: "center" }}>{MyCountry()} travel guide</h4>
                     </div>
                     <div className={classes.mapContainer}>
-                        <small>Map of {country}</small>
+                        <small style={{ fontSize: '18px' }}>Map of {MyCountry()}</small>
                         <div className={classes.map}>
-                            <iframe style={{ border: 0, width: '100%', height: '100%' }} src="https://tinyurl.com/y4y37yrj"></iframe>
+                            <iframe src={MapFunc(CountryMap)} width="100%" height="100%" allowFullScreen={true} allow="full" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </>
+
             )}
         </div>
     );

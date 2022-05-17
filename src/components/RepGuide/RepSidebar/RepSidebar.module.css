@@ -7,15 +7,12 @@
 .RepSidebar {
     width: 90%;
     margin-left: 8%;
-    margin-bottom: 30px;
-    box-shadow: 1px 3px 15px -2px black;
+    /* border: 1px solid #aa9393; */
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 40px 30px;
-    background-color: #f7ecb8;
-
+    padding: 20px 10px;
 }
 
 .RepSidebar ul {
@@ -23,7 +20,7 @@
 }
 
 .RepSidebar li {
-    color: rgb(87, 82, 82);
+    color: #aa9393;
     width: 100%;
 }
 
@@ -38,6 +35,6 @@
 .RepSidebar a:hover {
     padding-left: 20px;
     color: black;
-    background-color: #eec674;
+    background-color: #e4d9c3;
 }
 

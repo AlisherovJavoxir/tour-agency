@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.508);
+  background-color: #f1f1f1;
 }
 .col_1 {
   width: 20%;
@@ -23,4 +23,5 @@
   width: 40%;
   display: flex;
   justify-content: end;
+  align-items: center;
 }
