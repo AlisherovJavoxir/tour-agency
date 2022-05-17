@@ -10,7 +10,7 @@ const RepSidebar = (props) => {
             <ul style={{ listStyle: "none" }}>
                 {links.map((f, index) => (
                     <li key={index}>
-                        <Link to={`${f.toLowerCase()}`}>{f}</Link>
+                        <Link className="link" to={`${f.toLowerCase()}`}>{f}</Link>
                     </li>
                 ))}
             </ul>

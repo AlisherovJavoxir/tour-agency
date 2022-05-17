@@ -66,14 +66,9 @@ const App = () => {
     return (
         <div>
             {/* <div style={{ backgroundImage: `url(${background})`}}  className="background"></div> */}
-            <div
-                style={{ 
-                    backgroundImage: `url(${background})`,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                    
-                }}>
-                    <Header/>
+            <div><Header/></div>
+            <div className="background"
+                style={{backgroundImage: `url(${background})`}}>
             </div>
             <div className="body">
                 <BrowserRouter>

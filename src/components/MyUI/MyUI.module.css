@@ -1,28 +1,30 @@
 .myButton {
   border: none;
-  padding: 10px 28px;
+  height: 46px;
+  padding: 0px 27px;
   background-color: transparent;
   min-width: 40px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: 0.2s;
   font-size: 1em;
   border-radius: 4px;
   color: white;
 }
 .myButton:hover {
-  background-color: #B6A47F;
-  /* box-shadow: 4px 4px#7ebd7e59; */
+  background-color: #B6A47F
 }
+
 .myInput {
   border: none;
   outline: none;
-  padding: 10px 15px;
+  height: 46px;
+  padding: 0px 27px;
   background-color: #b6a47f;
   border-radius: 4px;
   color: white;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .myInput::placeholder {
-  color: rgba(255, 255, 255, 0.504);
-}
+  color: rgba(255, 255, 255, 0.504)
+};

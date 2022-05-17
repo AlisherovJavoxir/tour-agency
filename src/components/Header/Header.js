@@ -19,19 +19,15 @@ const Header = () => {
                     </MyButton>
                     <MyButton>
                         <h2><ion-icon name="logo-facebook"></ion-icon></h2>
-                        {/* <ion-icon name="logo-facebook"></ion-icon> */}
                     </MyButton>
                     <MyButton>
                         <h2><ion-icon name="logo-instagram"></ion-icon></h2>
-                        {/* <ion-icon name="logo-instagram"></ion-icon> */}
                     </MyButton>
                     <MyButton>
                         <h2><ion-icon name="logo-youtube"></ion-icon></h2>
-                        {/* <ion-icon name="logo-youtube"></ion-icon> */}
                     </MyButton>
                     <MyButton>
                         <h2><ion-icon name="logo-twitter"></ion-icon></h2>
-                        {/* <ion-icon name="logo-twitter"></ion-icon> */}
                     </MyButton>
                 </div>
             </div>
