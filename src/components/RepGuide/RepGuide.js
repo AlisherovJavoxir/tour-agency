@@ -5,7 +5,7 @@ import RepMap from "./RepMap/RepMap";
 import RepSidebar from "./RepSidebar/RepSidebar";
 
 const RepGuide = () => {
-    // let Uzb = ['Whi visit?', 'Arts', 'Customs', 'Foreign', 'Whi visit?', 'Customs', 'Foreign', 'Whi visit?', 'Arts', 'Customs', 'Foreign', 'Whi visit?'];
+    // let Uzb = ['Why visit?', 'Arts', 'Customs', 'Foreign', 'Why visit?', 'Customs', 'Foreign', 'Why visit?', 'Arts', 'Customs', 'Foreign', 'Why visit?'];
     // let otherServices = ['Flights', 'Guides', 'Trains', 'Transportation', 'Visa'];
     // let sights = ['Tashkent', 'Samarkand', 'Bukhara', 'Khiva', 'Gijduvan', 'Shakhrisabz', 'Margilan', 'Rishtan', 'Charvak', 'Aral Sea', 'Boysun', 'Chimgan', 'Nurata', 'Termez'];
     // let covid = ['Covid updates', 'Covid measures', 'Flexible booking', 'Flexible cancellations']
@@ -13,18 +13,18 @@ const RepGuide = () => {
         {
             name: "",
             faqs: [
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
             ],
             sights: [
                 'Uzbekistan', 'Tajikistan', 'Kyrgyzistan', 'Kazakhstan', 'Turkmenistan'
@@ -35,18 +35,18 @@ const RepGuide = () => {
         {
             name: "uzbekistan",
             faqs: [
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
             ],
             sights: [
                 { name: 'Tashkent', shrines: ['Amir Temur xiyoboni', 'Mustaqillik maydoni'] },
@@ -69,18 +69,18 @@ const RepGuide = () => {
         {
             name: "tajikistan",
             faqs: [
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
             ],
             sights: ["Dushanbe", "Xalton", "Sug'd", "Badaxshon", "Xo'jand", "Qo'rg'ontepa", "Qulyab"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
@@ -89,18 +89,18 @@ const RepGuide = () => {
         {
             name: "turkmenistan",
             faqs: [
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
             ],
             sights: ["Ashxabod", "Ahal", "Bolqon", "Dashoguz", "Lebap", "Mari"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],
@@ -109,18 +109,18 @@ const RepGuide = () => {
         {
             name: "kazakhstan",
             faqs: [
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
             ],
             sights: [
                 "Almati",
@@ -146,18 +146,18 @@ const RepGuide = () => {
         {
             name: "kyrgyzstan",
             faqs: [
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
                 "Arts",
                 "Customs",
                 "Foreign",
-                "Whi visit?",
+                "Why visit?",
             ],
             sights: ["Bishkek", "Botken", "Chuy", "Jalolobod", "Norin", "O'sh", "Talas", "Issiqko'l"],
             covid: ["Covid updates", "Covid measures", "Flexible booking", "Flexible cancellations"],

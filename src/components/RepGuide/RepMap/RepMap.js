@@ -10,7 +10,6 @@ const RepMap = ({ sights }) => {
         },
         {
             name: "Uzbekistan",
-            // address: "https://buff.page.link/3CPa"
             address: "https://buff.page.link/q1Vc"
         },
         {
