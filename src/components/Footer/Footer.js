@@ -8,7 +8,7 @@ const Footer = () => {
             <div className={classes.col_1}>
                 <MyButton><p>Cancellations</p></MyButton>
                 <MyButton><p>Subscribe</p></MyButton>
-                <MyButton><p>FaQ</p></MyButton>
+                <MyButton><p>FAQ</p></MyButton>
             </div>
             <div className={classes.col_2}>
                 <small>© Copyright 2019 - 2022 Oasis International Travel. All rights reserved.</small>
